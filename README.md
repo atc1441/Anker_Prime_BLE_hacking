@@ -50,6 +50,12 @@ LCD ST7789 Based 240x240
 
 
 
+# AnkerPowerBankDoom
+
+The GD32F303 on this power bank runs Doom. The sources, id Software's shareware `DOOM1.WAD`, the packed E1M1 data and the command that builds the internal-flash image are in [AnkerPowerBankDoom](AnkerPowerBankDoom).
+
+**This is a demo, not a replacement firmware.** Doom runs, the fuel gauge and the port telemetry are read live, and the USB power path keeps working while the game runs, so the bank still charges a phone. But it does not reimplement the stock power manager: it inherits a running power path rather than bringing one up, it cannot recover a port that has lost its USB-C contract, and it does not run the stock protection logic. Back up your internal flash and your external NOR first, keep an SWD adapter attached, and expect to flash the stock image back. Tried on exactly one device. Details and the known gaps are in [AnkerPowerBankDoom/README.md](AnkerPowerBankDoom/README.md).
+
 # Possible GD32F303 OTA Exploit
 
 The firmware upload uses a uint32_t variable to define the size of firmware and so far it looks unchecked.
