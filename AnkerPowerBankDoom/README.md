@@ -4,6 +4,12 @@ AnkerPowerBankDoom is Doom for the Anker Prime power bank. It runs on the bank's
 
 The engine is [DMC100-Doom](https://github.com/ArturBieniek4/DMC100-Doom) by Artur Bieniek. The board layer is `src/gd32` and `src/board`. The game code is GPL-2.0-or-later. See `COPYING` and `CREDITS.md`.
 
+Video of Doom running on the bank:(click on the image)
+
+[https://www.youtube.com/watch?v=Qb_BR02aldo](https://www.youtube.com/watch?v=Qb_BR02aldo)
+
+[![YoutubeVideo](https://img.youtube.com/vi/Qb_BR02aldo/0.jpg)](https://www.youtube.com/watch?v=Qb_BR02aldo)
+
 ## Status: demo, not a finished firmware
 
 **This is a demo. Do not treat it as a replacement firmware for your power bank.**
